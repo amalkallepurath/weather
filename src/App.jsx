@@ -73,7 +73,7 @@ const handleSearch=()=>{
 }
   return (
     <div className=''>
-    <div className={`${bgImage?"bg-[url('src/image/day.jpg')]":"bg-[url('src/image/night.jpg')]"} bg-cover bg-center md:h-[100vh] h-[400px] relative`}>
+    <div className={`${bgImage?"bg-[url('/day.jpg')]":"bg-[url('/night.jpg')]"} bg-cover bg-center md:h-[100vh] h-[400px] relative`}>
     <div className="flex justify-center relative"> <input type="search" placeholder='Enter City Name' onChange={(e)=>{setcity(e.target.value)}} className="bg-slate-50 focus:outline-none pl-3 text-sm mt-5 rounded-2xl md:w-[400px] w-[300px] p-2"/><img src={search} onClick={handleSearch} className='w-5 h-5 -translate-x-8 translate-y-7'/></div>
    <div className="flex justify-center"> <div className="flex flex-col text-center md:mt-16 m-10"><h1 className={`md:text-4xl text-2xl font-semibold ${bgImage?"text-gray-900":"text-white"} `}>{data && data.name}</h1><h2 className={`font-semibold ${bgImage?"text-gray-600":"text-white"}  md:text-[16px] text-xs`}>{formatted}</h2></div></div>
 <div className=" absolute bottom-0 md:mb-56 md:ml-72 ml-12 mb-12  text-center">
